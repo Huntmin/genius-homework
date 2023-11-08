@@ -1,0 +1,95 @@
+:root {
+  --color-brand: #2b7fff;
+  --color-primary-dark: #011c44;
+  --color-primary-light: #ffffff;
+}
+
+/* Base */
+body {
+  color: var(--color-primary-dark);
+}
+ul {
+  list-style-type: none;
+}
+
+/* Link */
+.header-link {
+  color: var(--color-primary-dark);
+}
+
+.header-link:hover {
+  color: var(--color-brand);
+}
+
+.footer-link {
+  color: var(--color-primary-light);
+}
+/* Button */
+.button-primary {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button-secondary {
+  color: var(--color-primary-light);
+  background-color: var(--color-brand);
+  border: 2px solid var(--color-brand);
+  border-radius: 32px;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.button-secondary:hover {
+  color: var(--color-primary-dark);
+  background-color: transparent;
+}
+
+.down-info-button {
+  color: #4a4a4a;
+}
+.down-info-button2 {
+  color: #747272;
+}
+/* Hero section */
+.hero-title {
+  color: var(--color-brand);
+}
+
+.section-title span {
+  color: var(--color-brand);
+}
+
+.advantages {
+  color: #000000;
+}
+
+.face-mask {
+  color: transparent;
+}
+
+.face-mask:hover {
+  color: var(--color-primary-light);
+}
+
+.section-contact-title {
+  color: var(--color-primary-light);
+}
+/* Footer */
+.footer-address {
+  color: var(--color-primary-light);
+}
+
+.privacy-policy {
+  color: var(--color-primary-light);
+}
+
+.data-is-protected {
+  color: #747272;
+}

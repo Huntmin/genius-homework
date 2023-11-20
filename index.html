@@ -8,12 +8,12 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="container">
         <div class="header-container">
           <nav class="header-nav">
             <a href="./index.html"
-              ><img src="./images/logo.svg" alt="Логотип Beaty Zone"
+              ><img class="header-logo" src="./images/logo.svg" alt="Логотип Beaty Zone"
             /></a>
 
             <ul class="header-menu">
@@ -43,7 +43,7 @@
           <div class="hero-container">
             <p>Косметологічна клініка</p>
             <h1 class="hero-title" lang="en">beauty zone</h1>
-            <button class="button-primary" type="button">
+            <button class="button-primary modal-btn-open" type="button">
               Замовити дзвінок
             </button>
             <p class="down-info-button">
@@ -78,12 +78,12 @@
               <div class="girl-before">
                 <img class="photo-about-us" src="./images/girl-before.jpg" alt="Дівчина до процедури" />
               
-              <img src="./images/Star 2.svg" alt="Star 2">
-              <img src="./images/Star 3.svg" alt="Star 3.">
+              <img class="Star2" src="./images/Star 2.svg" alt="Star 2">
+              <img class="Star3" src="./images/Star 3.svg" alt="Star 3.">
               </div>
               
               <div class="girl-after">
-                <img src="./images/Star 1.svg" alt="Star 1">
+                <img class="Star1" src="./images/Star 1.svg" alt="Star 1">
               <img  class="photo-about-us"
                 src="./images/girl-after.jpg"
                 alt="Дівчина після процедури"
@@ -97,7 +97,7 @@
       <section class="section-title why-us-section " id="why-us-section">
         <div class="container">
           <h2 class="section-title-why-us">
-            Чому люди <span>обирають нас</span>
+            Чому люди <br> <span>обирають нас</span>
           </h2>
           <div class="why-us-card"><ul class="advantages-list">
             <div class="education"><li class="advantages-card">
@@ -135,7 +135,8 @@
           <h2 class="section-title-our-procedures">
             Наші <span>процедури</span>
           </h2>
-          <div class="procedures-container"><button class="arrow-icon-button" type="button">
+          <div class="procedures-container">
+            <button class="arrow-icon-button" type="button">
             <img class="arrow-icon" src="./images/Arrow 1.svg" alt="arrow" weidth="16" height="16">
           </button>
           <ul class="formats-list">
@@ -171,7 +172,7 @@
               </article>
             </li>
            </ul>
-          <button class="arrow-icon-button" type="button">
+          <button class="arrow-icon-button next" type="button">
             <img class="arrow-icon" src="./images/Arrow 1.svg" alt="arrow" weidth="16" height="16">
           </button></div>
           
@@ -188,15 +189,63 @@
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
           ></iframe>
-          <div class="contact-list"><h3 class="section-contact-title-regist">
-            Запишіться <span>безкоштовно</span> та отримайте подарунок
-          </h3>
-          <button class="button-secondary" type="button">
-            Записатись безкоштовно
-          </button>
-          <p class="down-info-button2">
-            Натискаючи на кнопку я погоджуюсь з політикою конфіденційності
-          </p></div></div>
+          <div class="contact-list"> <div class="modal1">
+      
+        <p class="format-text1">Запишіться <span class="form-spam">безкоштовно</span> та отримайте подарунок</p>
+        <form name="modal-form" autocomplete="off" >
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+          <input
+            class="form-input1"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Ваше ім'я та прізвище"
+            required
+            pattern=”^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$”
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tel"
+            >Ваш номер телефону</label
+          >
+          <input
+            class="form-input1"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
+            placeholder="Ваш номер телефону"
+            required
+             pattern=”^\+[0-9]{12}”
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email"
+            >Ваша електронна пошта</label
+          >
+          <input
+            class="form-input1"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Ваша електронна пошта"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </div>
+
+        <button class="form-button button-secondary" type="submit">
+          Записатись безкоштовно
+        </button>
+        <p class="form-terms">
+          Натискаючи на форму я погоджуюсь з
+          <a class="form-terms-link" href="#">політикою конфіденційності</a>
+        </p>
+        </form>
+      </div>
+        </div>
           
           
         </div>
@@ -241,22 +290,22 @@
                 >Україна, м. Київ, вул. Тараса Шевченка 5</a
               >
             </li>
-            <li>
-              <a href="#">
+            <div class="footer-icon"><li class="icon-footer">
+              <a  href="#">
                 <img src="./images/telephone-receiver_icon-icons.com_56033 1.svg" alt="telephone">
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="icon-footer">
+              <a  href="#">
                 <img src="./images/uit_facebook-f.svg" alt="facebook">
               </a>
             </li>
-            <li>
-              <a href="#">
-                <img class="icon-footer" src="./images/ph_instagram-logo-light.png" alt="instagram">
+            <li class="icon-footer">
+              <a  href="#">
+                <img src="./images/ph_instagram-logo-light.png" alt="instagram">
             
               </a>
-            </li>
+            </li></div>
           </ul>
           <div class="footer-info"><a class="privacy-policy" href="#" target="_blank"
             >Політика конфіденційності</a
@@ -267,5 +316,66 @@
         
       </div>
     </footer>
+    <div class="backdrop is-hidden">
+      <div class="modal">
+        <button class="modal-btn-close" type="button">Close</button>
+         <h2 class="form-title">Замовити дзвінок</h2>
+        <p class="format-text">Запишіться <span class="form-spam">безкоштовно</span> та отримайте подарунок</p>
+        <form name="modal-form" autocomplete="off" >
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-name">Ваше ім'я та прізвище</label>
+          <input
+            class="form-input"
+            type="text"
+            id="user-name"
+            name="user-name"
+            placeholder="Ваше ім'я та прізвище"
+            required
+            pattern=”^[Є-ЯҐа-їґ]+\s[Є-ЯҐа-їґ]+$”
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-tel"
+            >Ваш номер телефону</label
+          >
+          <input
+            class="form-input"
+            type="tel"
+            id="user-tel"
+            name="user-tel"
+            placeholder="Ваш номер телефону"
+            required
+             pattern=”^\+[0-9]{12}”
+          />
+        </div>
+
+        <div class="form-field">
+          <label class="form-label visually-hidden" for="user-email"
+            >Ваша електронна пошта</label
+          >
+          <input
+            class="form-input"
+            type="email"
+            id="user-email"
+            name="user-email"
+            placeholder="Ваша електронна пошта"
+            required
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+          />
+        </div>
+
+        <button class="form-button button-secondary" type="submit">
+          Записатись безкоштовно
+        </button>
+        <p class="form-terms">
+          Натискаючи на форму я погоджуюсь з
+          <a class="form-terms-link" href="#">політикою конфіденційності</a>
+        </p>
+        </form>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>

@@ -300,6 +300,8 @@ a {
 
 .why-us-section {
   background-image: url(../images/background3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .section-title-why-us {
@@ -361,9 +363,12 @@ a {
 .formats-item {
   flex-basis: calc((100%) / 3);
   flex-wrap: wrap;
-}
-
-.photo-procedures {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+  width: 344px;
+  height: 456px;
   background-image: linear-gradient(
     180.05deg,
     rgba(1, 28, 68, 0) 48.53%,
@@ -371,6 +376,16 @@ a {
     #011c44 101.39%
   );
   border-radius: 4px 120px;
+}
+
+.photo-procedures {
+  border-radius: 4px 120px;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 .section-title-our-procedures {
@@ -385,6 +400,19 @@ a {
 .face-mask {
   color: transparent;
   font-size: 22px;
+  padding-left: 30px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.face-mask1 {
+  font-size: 22px;
+  padding-left: 30px;
+  color: var(--color-primary-light);
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  text-align: center;
 }
 
 .face-mask:hover {
